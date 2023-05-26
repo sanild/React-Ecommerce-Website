@@ -1,10 +1,12 @@
+
+
 function Card(props) {
   return (
     <div className="card">
       <br />
       
       <div className="text-center">
-        <img alt="card-img" src={"./img/"+props.img} className="text-center img-fluid" />
+        <img alt="card-img" src={props.img} className="text-center img-fluid" />
       </div>
       <div className="text-center">
         <h3 className="card-title">{props.title}</h3>
