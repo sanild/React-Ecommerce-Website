@@ -4,8 +4,8 @@ function Header() {
   return (
     <header>
       <video src={headervideo} loop autoPlay muted></video>
-            <h1>Open Source Website</h1>
-      <div className="row">
+            <h1>React Open Source Ecommerce</h1>
+      {/* <div className="row">
         <button className="btn" style={{ cursor: "pointer" }}>
           Sign Up
         </button>
@@ -13,7 +13,7 @@ function Header() {
         <button className="btn" style={{ cursor: "pointer" }}>
           Log in
         </button>
-      </div>
+      </div> */}
 
       <div className="headerbg"></div>
     </header>

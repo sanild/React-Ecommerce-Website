@@ -1,6 +1,9 @@
-import { Link } from "react-scroll";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import ProductHomePage from '../pages/ProductHomePage';
+
 
 function Navbar() {
+
   document.addEventListener("scroll", function (e) {
     if (window.screen.width < 768 && window.scrollY > 690) {
       const gotop = document.querySelector(".gotop");
@@ -23,25 +26,35 @@ function Navbar() {
       nav.classList.remove("navopened");
     }
   });
+
   function openBar() {
     const bar = document.querySelector(".bar");
 
     bar.classList.toggle("opened");
   }
 
+
+
+
+
   return (
     <nav className="navbar">
+
       <div className="container">
+
         <div className="row">
+
           <h1 className="logo">
+
             <Link
-              spy={true}
-              smooth={true}
-              duration={1000}
-              to="headerbg"
-              style={{ cursor: "pointer" }}
+                      spy={true}
+                      smooth={true}
+                      duration={1000}
+                      to="/"
+                      style={{ cursor: "pointer" }}
             >
-              DarkLeas
+              
+              Shopping
             </Link>
           </h1>
           <ul className="bar">
@@ -52,7 +65,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={1000}
-                to="headerbg"
+                to="/"
               >
                 Home
               </Link>
@@ -61,30 +74,27 @@ function Navbar() {
               <Link
                 onClick={openBar}
                 activeClass="active"
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={1000}
+                to="/ProductHomePage"
               >
-                Services
+                Products
               </Link>
             </li>
             <li>
               <Link
                 onClick={openBar}
-                to="about-scroll"
+                to="/"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 activeClass="active"
               >
-                About
+                Our Story
               </Link>
             </li>
             <li>
               <Link
                 onClick={openBar}
-                to="contact"
+                to="/"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -94,6 +104,17 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+
+          {/* <Routes>
+
+          <Route exact path="/producthomepage"
+            element={<ProductHomePage/>}>
+          
+          </Route>
+
+        </Routes> */}
+
+
           <div className="button" onClick={openBar}>
             <div className="burger"></div>
             <div className="burger"></div>

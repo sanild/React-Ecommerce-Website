@@ -1,18 +1,21 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import Product from "./components/ProductList"
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import Navbar from './components/Navbar';
+import ProductHomePage from './pages/ProductHomePage';
+import Home from './pages/Homepage';
 
 function App() {
   return (
-    <>
+      <> 
+      <Router>
       <Navbar />
-      <Header />
-      <Main />
-      <Product />
-      <Footer />
-    </>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/producthomepage" element={<ProductHomePage/>}/>
+        
+        {/* <Route path="/productshomepage" component={HomePageProducts} /> */}
+      </Routes>
+    </Router>
+      </>
   );
 }
 
