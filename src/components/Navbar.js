@@ -47,11 +47,8 @@ function Navbar() {
           <h1 className="logo">
 
             <Link
-                      spy={true}
-                      smooth={true}
-                      duration={1000}
                       to="/"
-                      style={{ cursor: "pointer" }}
+                      
             >
               
               Shopping
@@ -61,10 +58,6 @@ function Navbar() {
             <li>
               <Link
                 onClick={openBar}
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={1000}
                 to="/"
               >
                 Home
@@ -73,7 +66,6 @@ function Navbar() {
             <li>
               <Link
                 onClick={openBar}
-                activeClass="active"
                 to="/ProductHomePage"
               >
                 Products
@@ -83,10 +75,7 @@ function Navbar() {
               <Link
                 onClick={openBar}
                 to="/"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                activeClass="active"
+                
               >
                 Our Story
               </Link>
@@ -95,10 +84,7 @@ function Navbar() {
               <Link
                 onClick={openBar}
                 to="/"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                activeClass="active"
+                
               >
                 Contact
               </Link>

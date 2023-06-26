@@ -6,9 +6,9 @@ function Main() {
   return (
     <>
       <main>
-        {/* <Services /> */}
-        {/* <About /> */}
-        {/* <Contact /> */}
+        <Services />
+        <About />
+        <Contact />
       </main>
     </>
   );

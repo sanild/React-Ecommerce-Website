@@ -1,10 +1,15 @@
+import React, { useEffect, useState } from 'react';
+import Navbar from '../components/Navbar'
 import Footer from "../components/Footer";
-import Product from "../components/ProductList"
+import Products from "../components/ProductList"
+import newcard from "../components/NewProductCard"
 
 function ProductHomePage() {
   return (
     <>
-      <Product />
+      <Navbar />
+      <Products />
+      <newcard/>
       <Footer />
     </>
   );

@@ -1,19 +1,28 @@
+
+
 function ProductCard(props) {
     return (
-      <div className="card">
-        <br />
+      <div className="ProductCard">
         
-        <div className="text-center">
-          <img alt="card-img" src={props.img} className="text-center img-fluid" />
+        <br />
+        <div className="product-image-div">
+          {/* <img alt="card-img" src={props.image} className="product-img text-center img-fluid" />      */}
+          <img alt="card-img" src={props.image} className="product-img" />        
+   
         </div>
+
         <div className="text-center">
-          <h3 className="card-title">{props.title}</h3>
+          <h3 className="product-key">{props.productId}</h3>
         </div>
+
+        <div className="text-center">
+          <h3 className="product-title">{props.title}</h3>
+        </div>
+
         <div className="p-3">
-          <p className="card-text">
-             {props.text}
-          </p>
+          <p className="product-price"> {props.price}</p>
         </div>
+
       </div>
     );
   }

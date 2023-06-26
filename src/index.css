@@ -112,11 +112,11 @@ code {
 }
 .navbar {
   transition: background-color 0.4s;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100% ;
   padding: 0.5rem;
-  background-color: transparent;
+  background-color: #010606;
   z-index: 2;
   backdrop-filter: blur(2px);
 }
@@ -576,4 +576,34 @@ ul li a {
 }
 .mb-1 {
   margin-bottom: 1rem!important;
+}
+
+
+
+.product-img{
+  height: 100%;
+  width: auto;
+}
+
+.ProductCard {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  width: 30%;
+  transition: all 0.2s;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px #e5e5e5;
+  margin: 10px;
+}
+
+.product-list {
+  padding:27spx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image-div{
+height: 150px;
+width: auto;
+text-align: center;
 }

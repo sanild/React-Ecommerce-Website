@@ -12,7 +12,7 @@ function Homepage() {
         <Navbar />
         <Header />
         <Main />
-        <Product />
+        {/* <Product /> */}
         <Footer />
         </>
     );
